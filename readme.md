@@ -25,7 +25,7 @@ Once you've run `composer update` you'll need to register the **service provider
 
 ```php
 'providers' => [
-    Lewis\Presenter\PresenterServiceProvider::class
+    Daniiltserin\Presenter\PresenterServiceProvider::class
 ]
 ```
 
@@ -36,7 +36,7 @@ Once you've run `composer update` you'll need to register the **service provider
 There's several ways to configure your presenters. First, you can utilize the configuration file, which can be published using the following command:
 
 ```
-$ php artisan vendor:publish --provider="Lewis\Presenter\PresenterServiceProvider"
+$ php artisan vendor:publish --provider="Daniiltserin\Presenter\PresenterServiceProvider"
 ```
 
 There are no presenters configured by default. The published file merely contains an explanation on how to configure your presenters. You must provide an array of
@@ -68,7 +68,7 @@ $this->app['decorator']->register(\App\User::class, \App\Presenters\UserPresente
 
 #### Creating Presenters
 
-A presenter should extend from `Lewis\Presenter\AbstractPresenter`, however, it is *NOT* required, but highly recommended, as you'll have access to several
+A presenter should extend from `Daniiltserin\Presenter\AbstractPresenter`, however, it is *NOT* required, but highly recommended, as you'll have access to several
 methods and magic methods that provide some useful functionality.
 
 I like to keep my presenters within a `Presenters` folder, however, you may organize things in whichever way you prefer.
@@ -76,7 +76,7 @@ I like to keep my presenters within a `Presenters` folder, however, you may orga
 ```php
 namespace App\Presenters;
 
-use Lewis\Presenter\AbstractPresenter;
+use Daniiltserin\Presenter\AbstractPresenter;
 
 class UserPresenter extends AbstractPresenter
 {
@@ -92,7 +92,7 @@ you call the parent constructor.
 namespace App\Presenters;
 
 use App\SomeNamespace\SomeClass;
-use Lewis\Presenter\AbstractPresenter;
+use Daniiltserin\Presenter\AbstractPresenter;
 
 class UserPresenter extends AbstractPresenter
 {
