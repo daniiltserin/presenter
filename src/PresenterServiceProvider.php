@@ -1,8 +1,8 @@
 <?php
 
-namespace Lewis\Presenter;
+namespace Daniiltserin\Presenter;
 
-use Lewis\Presenter\Decorator;
+use Daniiltserin\Presenter\Decorator;
 use Illuminate\Support\ServiceProvider;
 
 class PresenterServiceProvider extends ServiceProvider

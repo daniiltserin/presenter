@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Lewis\\Presenter\\": "src"
+            "Daniiltserin\\Presenter\\": "src"
         }
     }
 }

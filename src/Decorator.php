@@ -1,6 +1,6 @@
 <?php
 
-namespace Lewis\Presenter;
+namespace Daniiltserin\Presenter;
 
 use Illuminate\Support\Collection;
 use Illuminate\Database\Eloquent\Model;

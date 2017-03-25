@@ -8,7 +8,7 @@ There are [several](https://github.com/laravel-auto-presenter/laravel-auto-prese
 You can install this package using Composer:
 
 ```
-$ composer require lewis/presenter
+$ composer require daniiltserin/presenter
 ```
 
 Or in your `composer.json`:
@@ -16,7 +16,7 @@ Or in your `composer.json`:
 ```json
 {
     "require": {
-        "lewis/presenter": "0.1.*"
+        "daniiltserin/presenter": "*"
     }
 }
 ```
